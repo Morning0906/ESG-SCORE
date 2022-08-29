@@ -1,0 +1,6 @@
+<text class="title">ESG宏观概览</text>
+<view>
+<text class='play' bindtap='gotoPage_zc' style="display: flex; position: absolute; left: 10%; justify-content: center; align-items: center; margin: 0 auto; top: 10%; width: 80%; height: 266.8rpx;  box-sizing: border-box">ESG政策</text>
+<text class='play' bindtap='gotoPage_yw' style="position: absolute; left: 10%; top: 40%; justify-content: center; align-items: center; width: 80%; height: 266.8rpx; display: flex; box-sizing: border-box">ESG要闻</text>
+<text class='play' bindtap='gotoPage_fz' style="position: absolute; left: 10%; top: 70%; justify-content: center; align-items: center; width: 80%; height: 266.8rpx; display: flex; box-sizing: border-box">ESG发展趋势一览</text>
+</view>

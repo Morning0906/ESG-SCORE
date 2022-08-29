@@ -1,0 +1,20 @@
+<view class="content" style="width: 698rpx; height: 530rpx; display: flex; box-sizing: border-box; left: 0rpx; top: 15rpx">
+
+<view class='img' style="width: 650rpx; height: 505rpx; display: flex; box-sizing: border-box">
+  <text class="text01" style="width: 560rpx; height: 76rpx; display: flex; box-sizing: border-box">ESG评分分布图</text>
+  <image src="https://636c-cloud1-0g5xmjwvd771e9d9-1310069791.tcb.qcloud.la/ESG%E5%88%86%E5%B8%83%E5%9B%BE/ESG%E5%88%86%E5%B8%83.png?sign=279e2ddb48f24c62b04d1dc7bbd41af1&t=1647344605" class="img01" style="width: 622rpx; height: 404rpx; display: block; box-sizing: border-box"></image>
+</view>
+
+
+<view class='content2' style="position: fixed; left: 0rpx; top: 578rpx">
+  <view class='img' style="width: 650rpx; height: 530rpx; display: flex; box-sizing: border-box">
+<view class='text02'>您选择投资标时希望：</view> 
+<block wx:for="{{chooseList}}" wx:key="aa">
+   <view id='{{item.id}}' class='{{item.id == isChecked ? "userchoose" : ""}} content3' bindtap="userchoose">
+      <text  class='wenzi'>{{item.choice}}</text>
+   </view>
+</block>
+      </view>
+      </view>
+    </view>
+    <view id='{{isChecked}}' class='text' bindtap="toTestPage"><text class='tuijian'>点此查看为您推荐的股票</text></view> 

@@ -1,0 +1,38 @@
+<!--pages/company/esg/esg.wxml-->
+<view class="background" style="position: fixed; left: 349rpx; top: 82rpx; width: 352rpx; display: flex; box-sizing: border-box; height: 114rpx">
+    <view wx:for="{{datalist}}" wx:key="index">
+    <view wx:if="{{index==0}}">
+    <text class="wenzi1" style="font-size: 25px;">{{item.name}}</text>
+    </view>
+    </view>
+</view>
+<button class="btn1" style="position: relative; left: -198rpx; top: 15rpx; width: 250rpx; height: 250rpx; display: flex; box-sizing: border-box">
+ <text class="wenzi" bindtap="toTestPage" data-testId="003" style="width: 197rpx; height: 162rpx; display: flex; box-sizing: border-box">ESG\n综合评分</text>
+</button>
+
+<button bindtap='gotoPage_yingshou' class="btn2" style="position: relative; left: -198rpx; top: 148rpx; width: 250rpx; height: 127rpx; display: flex; box-sizing: border-box">
+ <text class="wenzi" data-testId="003" style="width: 180rpx; height: 144rpx; display: flex; box-sizing: border-box">ESG\n综合评分</text>
+</button>
+
+<button bindtap='gotoPage_bilv' class="btn2" style="position: relative; left: -198rpx; top: 388rpx; width: 250rpx; height: 127rpx; display: flex; box-sizing: border-box">
+ <text class="wenzi" data-testId="003" style="width: 178rpx; height: 108rpx; display: flex; box-sizing: border-box">第三方\n评级</text>
+</button>
+
+<button class="background" style="position: fixed; left: 358rpx; top: 354rpx; width: 334rpx; height: 252rpx; display: flex; box-sizing: border-box">
+ <view wx:for="{{datalist}}" wx:key="index">
+    <text class="wenzi1" data-testId="003" style="position: relative; width: 334rpx; height: 63rpx; display: flex; box-sizing: border-box;top: 4rpx">综合得分</text>
+    <text class="wenzi1" data-testId="003" style="position: relative; width: 334rpx; height: 63rpx; display: flex; box-sizing: border-box; top: 4rpx">{{item.price}}</text>
+    <text class="wenzi1" data-testId="003" style="position: relative; width: 334rpx; height: 63rpx; display: flex; box-sizing: border-box; top: 4rpx">行业排名</text>
+    <text class="wenzi1" data-testId="003" style="position: relative; width: 334rpx; height: 63rpx; display: flex; box-sizing: border-box; top: 4rpx">{{item.rank}}/{{item.hangyezongshu}}</text>
+</view>
+</button>
+
+<button class="background" style="position: fixed; left: 358rpx; top: 666rpx; width: 334rpx; height: 402rpx; display: flex; box-sizing: border-box">
+    <view wx:for="{{datalist}}" wx:key="index">
+    <text class="wenzi2" data-testId="003" style="position: relative; display: flex; box-sizing: border-box; left: 2rpx; top: 18rpx; width: 316rpx; height: 80.5rpx">华测CTI "{{item.hcCTI}}"</text>
+    <text class="wenzi2" data-testId="003" style="position: relative; width: 316rpx; height: 80.5rpx; display: flex; box-sizing: border-box; left: 2rpx; top: 22rpx">商道融绿 "{{item.sdrl}}"</text>
+    <text class="wenzi2" data-testId="003" style="position: relative; width: 316rpx; height: 80.5rpx; display: flex; box-sizing: border-box; left: 2rpx; top: 22rpx">中财绿金院 "{{item.zcljy}}"</text>
+    <text class="wenzi2" data-testId="003" style="position: relative; width: 316rpx; height: 80.5rpx; display: flex; box-sizing: border-box; left: 2rpx; top: 22rpx">中诚信 "{{item.zcx}}"</text>
+    <text class="wenzi2" data-testId="003" style="position: relative; width: 316rpx; height: 80.5rpx; display: flex; box-sizing: border-box; left: 2rpx; top: 22rpx">盟浪 "{{ml}}"</text>
+    </view>
+</button>

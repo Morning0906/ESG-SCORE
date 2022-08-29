@@ -1,0 +1,64 @@
+
+page{
+   width: 100%;
+  }
+  
+.title{
+    font-size: 50rpx;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .play {
+    font-size: 30rpx;
+    /*background-color: #7ec6cc;*/
+    color: #fff;
+    border-radius: 30rpx;
+    width: 90%;
+    height: 225%;
+    position: absolute;
+    bottom: 0rpx;
+    left: 0rpx;
+    align-items: center;
+  } 
+
+  .news{
+    width: 90%;
+    height: auto;
+    border-radius: 25rpx;
+  }
+
+  .word{
+    font-size: 35rpx;
+    width: 100%;
+    font-family: fangsong;
+    color: #000;
+  }
+
+  .blank{
+    height: 80rpx;
+  }
+
+  .next{
+    background-color: #7ec6cc;
+    font-size: large;
+    font-weight: bold;
+    width: 30%;
+    height: 55rpx;
+    border-radius: 25rpx;
+    color: #fff;
+    text-align: center;
+    align-items: center;
+  }
+
+  .abstract{
+     font-size: 28rpx;
+     width: 100%;
+    color: #a9a9a9;
+  }
+
+  .line{
+    height: 5rpx;
+    background-color: #7ec6cc;
+    width: 90%;
+  }

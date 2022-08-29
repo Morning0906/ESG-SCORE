@@ -1,0 +1,12 @@
+<!--pages/search/search.wxml-->
+<view class="tittle" style="position: relative; width: 750rpx; height: 145rpx; display: flex; box-sizing: border-box; left: 0rpx; top: 412rpx">ESG公司信息</view>
+<view class='search' style="position: relative; left: 0rpx; top: 458rpx">
+  <input style="background: #fff;opacity: 0.8;border-radius: 30rpx;position: relative; width: 668rpx; height: 112rpx; display: block; box-sizing: border-box; left: 50rpx; top: -6rpx"  type='text' 
+  		 placeholder='请输入公司代码或公司名称'
+         bindinput='input' 
+         bindconfirm='confirm'/>
+  <icon type='search' class='icons' bindtap='confirm'></icon>
+  <view wx:for="{{list}}"  wx:key='' class='lists'>
+    <text wx:if="{{item.show}}">{{item.name}}</text>
+  </view>
+</view>

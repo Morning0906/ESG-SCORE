@@ -1,0 +1,19 @@
+<!--pages/part2/company/caiwu/bilv/bilv.wxml-->
+<view class="table" style="position: relative; width: 686rpx; height: 628rpx; display: block; box-sizing: border-box; left: 30rpx; top: 50rpx">
+ <view class="tr bg-w">
+ <view class="th" wx:for="{{datalist}}" wx:if="{{index==0}}">{{item.name}}</view>
+ <view class="th">ROE</view>
+ <view class="th ">销售净利率</view>
+ <view class="th ">资产周转率</view>
+ <view class="th ">资产负债率</view>
+ </view>
+ <block wx:for="{{datalist}}" wx:key="index">
+ <view class="tr bg-g" wx:if="{{index >= 0}}" style="border: 3rpx solid #6bceb1; width: 686rpx; height: 96rpx; display: flex; box-sizing: border-box">
+ <view class="td" >{{item.time}}</view>
+ <view class="td" >{{item.ROE}}</view>
+ <view class="td">{{item.yingyejinglilv}}</view>
+ <view class="td">{{item.zichanfuzhailv}}</view>
+ <view class="td">{{item.zichanfuzhailv}}</view>
+ </view>
+ </block>
+</view>

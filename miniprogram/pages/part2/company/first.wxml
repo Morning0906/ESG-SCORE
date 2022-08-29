@@ -1,0 +1,35 @@
+<view class="background" style="position: fixed; left: 200rpx; top: 30rpx; width: 352rpx; display: flex; box-sizing: border-box; height: 114rpx">
+    <view wx:for="{{datalist}}" wx:key="index">
+    <view wx:if="{{index==0}}">
+    <text class="wenzi1">{{item.name}}</text>
+    </view>
+    </view>
+</view>
+
+<view style="position: relative; left: 245rpx; top: 81rpx">
+<navigator url="./caiwu/caiwu?code={{code}}" bindtap='gotoPage_caiwu' class="btn1" style="position: relative; left: -180rpx; top: 181rpx; width: 250rpx; height: 250rpx; display: flex; box-sizing: border-box">
+ <view class="wenzi" bindtap="toTestPage" data-testId="003" style="width: 125rpx; height: 72rpx; display: flex; box-sizing: border-box">主要财</view>
+ <view class="wenzi" bindtap="toTestPage" data-testId="003" style="width: 125rpx; height: 72rpx; display: flex; box-sizing: border-box">务数据</view>
+</navigator>
+
+<navigator url="./esg/esg?code={{code}}" bindtap='gotoPage_esg' class="btn2" style="position: relative; left: 180rpx; top: -87rpx; width: 250rpx; height: 250rpx; display: flex; box-sizing: border-box">
+ <text class="wenzi" bindtap="toTestPage" data-testId="003" style="width: 197rpx; height: 72rpx; display: flex; box-sizing: border-box">ESG</text>
+ <text class="wenzi" bindtap="toTestPage" data-testId="003" style="width: 197rpx; height: 72rpx; display: flex; box-sizing: border-box">综合评分</text>
+</navigator>
+
+<navigator url="./environment/environment?code={{code}}&name={{datalist[0].name}}" bindtap='gotoPage_environment' class="btn3" style="position: relative; left: 0rpx; top: -46rpx; width: 250rpx; height: 250rpx; display: flex; box-sizing: border-box">
+ <text class="wenzi" bindtap="toTestPage" data-testId="003" style="width: 197rpx; height: 72rpx; display: flex; box-sizing: border-box">环境信息</text>
+ <text class="wenzi" bindtap="toTestPage" data-testId="003" style="width: 197rpx; height: 72rpx; display: flex; box-sizing: border-box">(E)</text>
+</navigator>
+
+<navigator url="./society/society?code={{code}}" bindtap='gotoPage_society' class="btn4" style="position: relative; left: -180rpx; top: -8rpx; width: 250rpx; height: 250rpx; display: flex; box-sizing: border-box">
+ <text class="wenzi" bindtap="toTestPage" data-testId="003" style="width: 197rpx; height: 72rpx; display: flex; box-sizing: border-box">社会责任</text>
+ <text class="wenzi" bindtap="toTestPage" data-testId="003" style="width: 197rpx; height: 72rpx; display: flex; box-sizing: border-box">(S)</text>
+</navigator>
+
+<navigator url="./governance/governance?code={{code}}" bindtap='gotoPage_governance' class="btn5" style="position: relative; left: 180rpx; top: -278rpx; width: 250rpx; height: 250rpx; display: flex; box-sizing: border-box">
+ <text class="wenzi" bindtap="toTestPage" data-testId="003" style="width: 197rpx; height: 72rpx; display: flex; box-sizing: border-box">公司治理</text>
+ <text class="wenzi" bindtap="toTestPage" data-testId="003" style="width: 197rpx; height: 72rpx; display: flex; box-sizing: border-box">(G)</text>
+</navigator>
+</view>
+

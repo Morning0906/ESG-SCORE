@@ -1,0 +1,7 @@
+<view class="content">
+<!--背景动图-->
+<view class='background' style='background-image:url("");'></view>
+</view>
+<text class="word" style="position:relative; top: 150rpx;">Wise \n Choice</text>
+<view class='play' bindtap='gotoPage_index' style="position: absolute; left: 20%; bottom: 200rpx; ">
+<text style="position: relative; height: 100rpx; align-items: center; justify-content: center; left: -4rpx; top: 10rpx">Start Now</text></view>

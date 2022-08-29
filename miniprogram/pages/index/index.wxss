@@ -1,0 +1,27 @@
+page{
+  height:100%;
+  }
+  
+.background {
+  width: 100%;
+  height: 100%;
+  position:fixed; 
+  background-size:100% 100%;
+  z-index: -1;
+  }
+
+.play {
+  font-size: 80rpx;
+  background-color: #7ec6cc;
+  color: #fff;
+  border-radius: 30rpx;
+  width: 600rpx;
+  text-align: center;
+  height: 160rpx;
+  line-height: 160rpx;
+  font-weight: bold;
+  position: absolute;
+  bottom: 0rpx;
+  left: 0rpx;
+  align-items: center;
+}

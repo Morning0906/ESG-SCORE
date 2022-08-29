@@ -1,0 +1,35 @@
+<view class="background" style="position: fixed; left: 300rpx; top: 30rpx; width: 352rpx; display: flex; box-sizing: border-box; height: 114rpx">
+    <view wx:for="{{datalist}}" wx:key="index">
+    <view wx:if="{{index==0}}">
+    <text class="wenzi1">{{item.name}}</text>
+    </view>
+    </view>
+</view>
+<button class="btn1" style="position: relative; left: -230rpx; top: 8rpx; width: 216rpx; height: 216rpx; display: flex; box-sizing: border-box">
+ <text class="wenzi" bindtap="toTestPage" data-testId="003" style="width: 197rpx; height: 162rpx; display: flex; box-sizing: border-box">主要财务数据</text>
+</button>
+
+<button class="background" style="position: fixed; left: 208rpx; top: 266rpx; width: 334rpx; height: 824rpx; display: flex; box-sizing: border-box"></button>
+
+<view style="position: absolute; width: 33%; left: 251rpx; top: 243rpx">
+<navigator url="./yingshou/yingshou?code={{code}}"class="btn2" style="position: relative; left: 0rpx; top: 80rpx; width: 250rpx; height: 127rpx; display: flex; box-sizing: border-box">
+ <text class="wenzi" data-testId="003" style="width: 180rpx; height: 144rpx; display: flex; box-sizing: border-box">营收数据</text>
+</navigator>
+
+<navigator url="./bilv/bilv?code={{code}}" class="btn2" style="position: relative; left: 0rpx; top: 236rpx; width: 250rpx; height: 127rpx; display: flex; box-sizing: border-box">
+ <text class="wenzi" data-testId="003" style="width: 178rpx; height: 108rpx; display: flex; box-sizing: border-box">主要财务比率</text>
+</navigator>
+
+<navigator url="./shichang/shichang?code={{code}}" class="btn2" style="position: relative; left: 0rpx; top: 382rpx; width: 250rpx; height: 127rpx; display: flex; box-sizing: border-box">
+ <text class="wenzi" data-testId="003" style="width: 178rpx; height: 108rpx; display: flex; box-sizing: border-box">市场指标</text>
+</navigator>
+</view>
+
+<view style="width: 468rpx; height: 84rpx; display: block; box-sizing: border-box; position: relative; left: 141rpx; top: 1022rpx; z-index: 100">
+<image src="cloud://cloud1-0g5xmjwvd771e9d9.636c-cloud1-0g5xmjwvd771e9d9-1310069791/提示.png" style="width: 60rpx; height: 60rpx; display: inline-block; box-sizing: border-box; left: 72rpx; top: 400rpx"></image>
+<text style="position: relative; left: 4rpx; top: -18rpx; color:#333333;">点击上方按钮查看详细信息</text>
+
+</view>
+
+
+

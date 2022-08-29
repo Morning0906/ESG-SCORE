@@ -1,0 +1,149 @@
+page{
+  height:110%;
+  }
+
+.img{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.img02{
+  width: 100%;
+  display: flex;
+  flex-direction:row;
+  align-items: center;
+}
+
+.text01 {
+  font-size: 14px;
+  color: #a9a9a9;
+  line-height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content{
+  position: fixed;
+  top:15rpx;
+  width: 650rpx;    /*弹窗布局宽*/
+  height: 500rpx;   /*弹窗布局高，与下面弹出距离transform有关*/
+  margin-left: 28rpx;
+  margin-bottom: 70rpx;
+  margin-top: 10rpx;
+  background: #7ec6cc;
+  z-index: 12;
+  border-radius: 20rpx;
+  box-shadow: 0px 3px 3px 2px gainsboro;
+  padding: 25rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.9;
+}
+
+.content2{
+  position: relative;
+  width: 650rpx;    /*弹窗布局宽*/
+  height: auto;   /*弹窗布局高，与下面弹出距离transform有关*/
+  margin-left: 28rpx;
+  margin-bottom: 70rpx;
+  margin-top: 10rpx;
+  background: #7ec6cc;
+  z-index: 12;
+  border-radius: 20rpx;
+  box-shadow: 0px 3px 3px 2px gainsboro;
+  padding: 25rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.9;
+}
+
+.content3{
+  height: 45rpx; 
+  margin-top: 15rpx;
+  margin-left: 15rpx;
+  width: 550rpx;
+  border-radius: 30px;
+  background: hsl(208, 32%, 92%);
+  color: rgb(61, 45, 14);
+  padding: 50rpx ;
+  opacity: 0.8;
+  z-index: 8;
+  justify-content: center;
+}
+
+.text02 {
+  width: 280px;
+  font-size: 16px;
+  line-height: 30px;
+  align-items: center;
+  justify-content: center;
+}
+
+.wenzi{
+  font-size:18px;
+  display: flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wenzi1{
+  position: relative;
+  font-size:24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.text{
+  position: relative;
+  width: 650rpx;    /*弹窗布局宽*/
+  height: 100rpx;   /*弹窗布局高，与下面弹出距离transform有关*/
+  margin-left: 28rpx;
+  margin-bottom: 70rpx;
+  background: #f8f8f8;
+  z-index: 12;
+  border-radius: 20rpx;
+  box-shadow: 0px 3px 3px 2px gainsboro;
+  padding: 25rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.9;
+}
+
+.circle{
+  height: 40rpx; 
+  margin-top: 15rpx;
+  margin-left: 15rpx;
+  width: 50rpx;
+  border-radius: 100rpx;
+  background: hsl(208, 32%, 92%);
+  color: rgb(61, 45, 14);
+  padding: 50rpx ;
+  opacity: 0.8;
+  z-index: 8;
+  justify-content: center;
+}
+
+.next{
+  position: relative;
+  width: 150rpx;    /*弹窗布局宽*/
+  height: 50rpx;   /*弹窗布局高，与下面弹出距离transform有关*/
+  margin-left: 50rpx;
+  margin-bottom: 70rpx;
+  background: #f8f8f8;
+  z-index: 12;
+  border-radius: 20rpx;
+  box-shadow: 0px 3px 3px 2px gainsboro;
+  padding: 25rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.9;
+}

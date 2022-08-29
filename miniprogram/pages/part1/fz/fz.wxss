@@ -1,0 +1,37 @@
+page{
+  height:130%;
+  background-color: #fff;
+  }
+
+  .title{
+    font-size: 50rpx;
+    font-weight: bold;
+    text-align: center;
+  }
+
+.play {
+  font-size: 35rpx;
+  background-color: #7ec6cc;
+  color: #fff;
+  border-radius: 30rpx;
+  width: 600rpx;
+  text-align: center;
+  height: 50rpx;
+  line-height: 160rpx;
+  position: absolute;
+  bottom: 0rpx;
+  left: 0rpx;
+  align-items: center;
+}
+
+.word{
+  font-size: 200rpx;
+  font-weight: bold;
+  color:#7ec6cc;
+  border-radius: 10rpx;
+  text-align: center;
+}
+
+.chart{
+  width: 80%;
+}

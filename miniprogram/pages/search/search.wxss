@@ -1,0 +1,30 @@
+/* pages/search/search.wxss */
+page{
+  background: #7ec6cc;
+}
+.tittle{
+  font-size: 80rpx;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 180rpx;
+}
+.search{
+  position: relative;
+}
+.search input{
+  border:2px solid #ccc;
+  border-radius: 6px;
+  height: 50px;
+}
+.icons{
+  position: absolute;
+  right: 30px;
+  top:15px;
+}
+.lists{
+  text-align: center;
+  margin-top: 20px;
+  color: rgb(230, 124, 25);
+}

@@ -1,0 +1,5 @@
+<!--pages/com/com.wxml-->
+<view class="tittle">搜索结果</view>
+<view wx:for="{{list}}"  wx:key='' class='lists'>
+    <text wx:if="{{item.show}}">{{item.name}}</text>
+</view>

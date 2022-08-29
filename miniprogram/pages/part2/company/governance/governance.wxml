@@ -1,0 +1,55 @@
+<!--pages/company/governance/governance.wxml-->
+<view class="background" style="position: fixed; left: 374rpx; top: 74rpx; width: 352rpx; display: flex; box-sizing: border-box; height: 114rpx">
+    <view wx:for="{{datalist2}}" wx:key="index">
+    <view wx:if="{{index==0}}">
+    <text class="wenzi1" style="font-size: 25px;">{{item.name}}</text>
+    </view>
+    </view>
+</view>
+<button class="btn1" style="position: relative; left: -191rpx; top: 6rpx; width: 250rpx; height: 250rpx; display: flex; box-sizing: border-box">
+ <text class="wenzi" bindtap="toTestPage" data-testId="003" style="width: 197rpx; height: 162rpx; display: flex; box-sizing: border-box">公司治理\n(G)</text>
+</button>
+
+<button class="btn2" style="position: relative; left: -191rpx; top: 86rpx; width: 250rpx; height: 127rpx; display: flex; box-sizing: border-box">
+ <text class="wenzi" data-testId="003" style="width: 197rpx; height: 113rpx; display: flex; box-sizing: border-box">监管层\n构成</text>
+</button>
+
+<button class="btn2" style="position: relative; left: -191rpx; top: 248rpx; width: 250rpx; height: 127rpx; display: flex; box-sizing: border-box">
+ <text class="wenzi" data-testId="003" style="width: 197rpx; height: 108rpx; display: flex; box-sizing: border-box">薪资</text>
+</button>
+
+<button class="btn2" style="position: relative; left: -191rpx; top: 456rpx; width: 250rpx; height: 127rpx; display: flex; box-sizing: border-box">
+ <text class="wenzi" data-testId="003" style="width: 197rpx; height: 108rpx; display: flex; box-sizing: border-box">三会召开情况</text>
+</button>
+
+
+
+<button class="background" style="position: fixed; left: 374rpx; top: 251rpx; width: 352rpx; height: 336rpx; display: flex; box-sizing: border-box">
+    <view wx:for="{{datalist}}" wx:key="index">
+    <text class="wenzi2" data-testId="003" style="position: relative; width: 352rpx; height: 56rpx; display: flex; box-sizing: border-box;  top: 2rpx;">监管层总人数</text>
+    <text class="wenzi2" data-testId="003" style="position: relative; width: 352rpx; height: 56rpx; display: flex; box-sizing: border-box;  top: 2rpx;">{{item.zrs}}</text>
+    <text class="wenzi2" data-testId="003" style="position: relative; width: 352rpx; height: 56rpx; display: flex; box-sizing: border-box;  top: 2rpx;">监管层女性比例 </text>
+    <text class="wenzi2" data-testId="003" style="position: relative; width: 352rpx; height: 56rpx; display: flex; box-sizing: border-box;  top: 2rpx;">{{item.nxbl}}</text>
+    <text class="wenzi2" data-testId="003" style="position: relative; width: 352rpx; height: 56rpx; display: flex; box-sizing: border-box;  top: 2rpx;">监管层持股数量</text>
+    <text class="wenzi2" data-testId="003" style="position: relative; width: 352rpx; height: 56rpx; display: flex; box-sizing: border-box; top: 2rpx;">{{item.cgsl}}</text>
+
+    </view>
+</button>
+
+<button class="background" style="position: fixed; left: 374rpx; top: 650rpx; width: 352rpx; display: flex; box-sizing: border-box">
+    <view wx:for="{{datalist}}" wx:key="index">
+        <text class="wenzi2" data-testId="003" style="position: relative; width: 352rpx; height: 60rpx; display: flex; box-sizing: border-box; top: 6rpx;">监管层人均年薪</text>
+    <text class="wenzi2" data-testId="003" style="position: relative; width: 352rpx; height: 60rpx; display: flex; box-sizing: border-box; top: 6rpx;">{{item.rjnx}}</text>
+</view>
+</button>
+
+<button class="background" style="position: fixed; left: 374rpx; top: 936rpx; width: 352rpx; display: flex; box-sizing: border-box">
+    <view wx:for="{{datalist}}" wx:key="index">
+    <text class="wenzi1" data-testId="003" style="position: relative; width: 352rpx; height: 56rpx; display: flex; box-sizing: border-box; top: 2rpx;">董事会会议次数</text>
+    <text class="wenzi1" data-testId="003" style="position: relative; width: 352rpx; height: 56rpx; display: flex; box-sizing: border-box; top: 2rpx;">{{item.dsh}}</text>
+    <text class="wenzi1" data-testId="003" style="position: relative; width: 352rpx; height: 56rpx; display: flex; box-sizing: border-box; top: 2rpx;">监事会会议次数</text>
+    <text class="wenzi1" data-testId="003" style="position: relative; width: 352rpx; height: 56rpx; display: flex; box-sizing: border-box; top: 2rpx;">{{item.jsh}}</text>
+    <text class="wenzi1" data-testId="003" style="position: relative; width: 352rpx; height: 56rpx; display: flex; box-sizing: border-box; top: 2rpx;">股东大会召开次数</text>
+    <text class="wenzi1" data-testId="003" style="position: relative; width: 352rpx; height: 56rpx; display: flex; box-sizing: border-box; top: 2rpx;">{{item.gddh}}</text>
+</view>
+</button>

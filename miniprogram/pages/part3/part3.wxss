@@ -1,0 +1,134 @@
+page{
+  height:100%;
+  }
+
+.img{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.text01 {
+  width: 280px;
+  font-size: 16px;
+  line-height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content{
+  position: fixed;
+  top:15rpx;
+  width: 650rpx;    /*弹窗布局宽*/
+  height: 500rpx;   /*弹窗布局高，与下面弹出距离transform有关*/
+  margin-left: 28rpx;
+  margin-bottom: 70rpx;
+  margin-top: 10rpx;
+  background: #7ec6cc;
+  z-index: 12;
+  border-radius: 20rpx;
+  box-shadow: 0px 3px 3px 2px gainsboro;
+  padding: 25rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.9;
+}
+
+.content2{
+  position: fixed;
+  top:555rpx;
+  width: 650rpx;    /*弹窗布局宽*/
+  height: 600rpx;   /*弹窗布局高，与下面弹出距离transform有关*/
+  margin-left: 28rpx;
+  margin-bottom: 70rpx;
+  margin-top: 10rpx;
+  background:  #ffffff;
+  z-index: 12;
+  border-radius: 20rpx;
+  box-shadow: 0px 3px 3px 2px gainsboro;
+  padding: 25rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.9;
+}
+
+.content3{
+  height: 70rpx; 
+  margin-top: 15rpx;
+  margin-left: 15rpx;
+  width: 550rpx;
+  border-radius: 30px;
+  background: hsl(208, 32%, 92%);
+  color: rgb(61, 45, 14);
+  padding: 50rpx ;
+  opacity: 0.8;
+  z-index: 8;
+  justify-content: center;
+}
+
+.img01{
+  width: 600rpx;
+  height: 400rpx;
+  margin-top: 5rpx;
+}
+
+.text02 {
+  width: 280px;
+  font-size: 16px;
+  line-height: 30px;
+  align-items: center;
+  justify-content: center;
+}
+
+.wenzi{
+  font-size:18px;
+  display: flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.text{
+  position: fixed;
+  bottom: 0rpx;
+  width: 650rpx;    /*弹窗布局宽*/
+  height: 80rpx;   /*弹窗布局高，与下面弹出距离transform有关*/
+  margin-left: 28rpx;
+  margin-bottom: 30rpx;
+  background: #6bceb1;
+  z-index: 12;
+  border-radius: 20rpx;
+  box-shadow: 0px 3px 3px 2px gainsboro;
+  padding: 25rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.9;
+}
+
+.userchoose{
+  height: 70rpx; 
+  margin-top: 15rpx;
+  margin-left: 15rpx;
+  width: 550rpx;
+  border-radius: 30px;
+  background: #7ec6cc;
+  color: rgb(61, 45, 14);
+  padding: 50rpx ;
+  opacity: 0.8;
+  z-index: 8;
+  justify-content: center;
+}
+
+.tuijian {
+  font-size: 20px;
+  color:  #ffffff;
+  line-height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

@@ -1,0 +1,1 @@
+"/Applications/wechatwebdevtools.app/Contents/MacOS/cli" cloud functions deploy --e cloud1-0g5xmjwvd771e9d9 --n quickstartFunctions --r --project "/Users/vionoe/Desktop/ESG" --report_first --report

@@ -1,0 +1,20 @@
+<!--政策-->
+<view class="title" >ESG政策</view>
+<view style="position: relative; top: 35rpx;">
+<view wx:for="{{list}}" wx:key="index">
+    <navigator class="news" url="./web/web?link={{item.link}}" style="position: relative; left: 38rpx; top: 0rpx">
+         <view class="word" style="position: relative; ">{{item.title}}</view>
+         <view class="word" style="position: relative; top: 10rpx; font-size: 25rpx; color: #a9a9a9;">
+            {{item.time}}
+            <text style="position: absolute; right: 0%;">[详情]</text>
+         </view>
+         
+    </navigator>
+    <view class="line" style="position: relative; left: 5%; top: 20rpx;"></view>
+    <view class="blank"></view>
+</view>
+<view class="next" style="position: relative; left: 106rpx; top: 27rpx" bindtap="find_prior_data" >上一页</view>
+<view class="next" style="position: relative; left: 418rpx; top: -29rpx" bindtap="find_next_data" >下一页</view>
+</view>
+
+

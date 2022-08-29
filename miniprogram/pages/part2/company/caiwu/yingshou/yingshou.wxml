@@ -1,0 +1,19 @@
+<!--pages/part2/company/caiwu/yingshou/yingshou.wxml-->
+<view class="table" style="position: relative; width: 684rpx; display: block; box-sizing: border-box; left: 29rpx; top: 50rpx">
+ <view class="tr bg-w">
+     <view class="th" wx:for="{{datalist}}" wx:if="{{index==0}}">{{item.name}}</view>
+     <view class="th">营业收入</view>
+     <view class="th ">营收增长率</view>
+     <view class="th ">净利润</view>
+     <view class="th ">净利润增长率</view>
+ </view>
+ <block wx:for="{{datalist}}" wx:key="index">
+ <view class="tr bg-g" wx:if="{{index > 0}}" style="border: 3rpx solid #6bceb1; width: 686rpx; height: 96rpx; display: flex; box-sizing: border-box">
+    <view class="td" >{{item.time}}</view>
+     <view class="td" >{{item.yingshou}}</view>
+     <view class="td" >{{item.yingshouzengzhanglv}}</view>
+     <view class="td">{{item.jinglirun}}</view>
+     <view class="td">{{item.jinglirunzengzhanglv}}</view>
+ </view>
+ </block>
+</view>

@@ -1,0 +1,25 @@
+<view class='text'><view class='img' ><text>您在投资时偏向于传统型策略，</text>
+<text>我们为您推荐以下股票：</text>
+</view> 
+</view>
+
+<view class='content2'  style="width: 698rpx; height: 1688rpx; display: flex; box-sizing: border-box; left: 0rpx; top: -58rpx; position: relative">
+  <view class='img'>
+    <view class='img02' wx:for="{{list}}" wx:key="index">
+      <view class='circle' >
+          <text class='wenzi1' style="position: relative; left: 0rpx; top: -20rpx">{{item.rank}}</text>
+        </view>
+       <navigator class='content3' url="../../part2/company/first?code={{item.code}}">
+          <text class='wenzi'>{{item.name}} {{item.codename}}</text>
+        </navigator>
+        </view>
+
+      </view>
+      </view>
+
+     <view class='img02' style="width: 750rpx; height: 29rpx; display: flex; box-sizing: border-box">
+      <view class="next"  bindtap="find_prior_data"  style="position: relative; left: 64rpx; top: -24rpx">上一页</view>
+      <view class="next"  bindtap="find_next_data"  style="position: relative; left: 134rpx; top: -24rpx">下一页</view>
+    </view>
+
+    <text class="text01">*结果仅供用户参考，不构成任何股票投资意见</text>

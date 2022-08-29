@@ -1,0 +1,45 @@
+<!--pages/company/society/society.wxml-->
+<view class="background" style="position: fixed; left: 342rpx; top: 82rpx; width: 352rpx; display: flex; box-sizing: border-box; height: 114rpx">
+    <view wx:for="{{datalist3}}" wx:key="index">
+    <view wx:if="{{index==0}}">
+    <text class="wenzi1" style="font-size: 25px;">{{item.name}}</text>
+    </view>
+    </view>
+</view>
+<button class="btn1" style="position: relative; left: -198rpx; top: 15rpx; width: 250rpx; height: 250rpx; display: flex; box-sizing: border-box">
+ <text class="wenzi" bindtap="toTestPage" data-testId="003" style="width: 197rpx; height: 162rpx; display: flex; box-sizing: border-box">社会责任\n(S)</text>
+</button>
+
+<button  class="btn2" style="position: relative; left: 0rpx; top: -6rpx; width: 250rpx; height: 127rpx; display: flex; box-sizing: border-box">
+ <text class="wenzi" data-testId="003" style="width: 180rpx; height: 144rpx; display: flex; box-sizing: border-box">违规处理</text>
+</button>
+
+<button bindtap='gotoPage_bilv' class="btn2" style="position: relative; left: -198rpx; top: 758rpx; width: 250rpx; height: 127rpx; display: flex; box-sizing: border-box">
+ <text class="wenzi" data-testId="003" style="width: 178rpx; height: 108rpx; display: flex; box-sizing: border-box">是否披露责任报告</text>
+</button>
+
+
+
+<!--<button class="background" style="position: fixed; left: 70rpx; top: 430rpx; width: 624rpx; display: flex; box-sizing: border-box">-->
+    <view class="background" style="position: fixed;  left: 70rpx; top: 430rpx; width: 624rpx; display: flex; box-sizing: border-box" wx:for="{{datalist1}}" wx:key="index">
+    
+    <view wx:if="{{index == 0}}">
+    <text class="wenzi1" style="position: relative; width: 624rpx; height: 65rpx; display: flex; box-sizing: border-box;  top: 0rpx">公告文件名称</text>
+    <text class="wenzi2" style="position: relative; width: 624rpx; height: auto; display: flex; box-sizing: border-box;  top: 4rpx">{{item.file_name}}</text>
+    <text class="wenzi1" style="position: relative; width: 624rpx; height: 65rpx; display: flex; box-sizing: border-box;  top: 4rpx">违规主体名称</text>
+    <text class="wenzi2" style="position: relative; width: 624rpx; height: auto; display: flex; box-sizing: border-box;  top: 4rpx">{{item.ViolatorName}}</text>
+    <text class="wenzi1" style="position: relative; width: 624rpx; height: 65rpx; display: flex; box-sizing: border-box;  top: 4rpx">与公司关系</text>
+    <text class="wenzi2" style="position: relative; width: 624rpx; height: auto; display: flex; box-sizing: border-box;  top: 4rpx"> {{item.Relationship}}</text>
+    <text class="wenzi1" style="position: relative; width: 624rpx; height: 65rpx; display: flex; box-sizing: border-box;  top: 4rpx">处罚方式</text>
+    <text class="wenzi2" style="position: relative; width: 624rpx; height: auto; display: flex; box-sizing: border-box;  top: 4rpx">{{item.PunishmentType}}</text>
+    <text class="wenzi1" style="position: relative; width: 624rpx; height: 65rpx; display: flex; box-sizing: border-box;  top: 4rpx">处罚金额</text>
+    <text class="wenzi2" style="position: relative; width: 624rpx; height: auto; display: flex; box-sizing: border-box;  top: 4rpx">{{item.Penalty}}</text>  
+    </view>
+    </view>
+<!--</button>-->
+
+<button class="background" style="position: fixed; left: 360rpx; top: 1156rpx; width: 334rpx; height: 160rpx; display: flex; box-sizing: border-box">
+    <view wx:for="{{datalist2}}" wx:key="index">
+    <text class="wenzi1" data-testId="003" style="position: relative; width: 178rpx; height: 82rpx; display: flex; box-sizing: border-box; left: -6rpx; top: -4rpx"> {{item.shifoupilu}}</text>
+    </view>
+</button>

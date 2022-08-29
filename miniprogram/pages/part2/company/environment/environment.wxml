@@ -1,0 +1,77 @@
+<!--pages/company/environment/environment.wxml-->
+
+<button class="btn1" style="position: relative; left: -198rpx; top: 15rpx; width: 250rpx; height: 250rpx; display: flex; box-sizing: border-box">
+ <text class="wenzi" data-testId="003" style="width: 197rpx; height: 162rpx; display: flex; box-sizing: border-box">环境信息\n(E)</text>
+</button>
+
+<view class="background" style="position: relative; left: 375rpx; top: -200rpx; width: 352rpx; height: 114rpx; display: flex; box-sizing: border-box">
+    <text class="bt1" style="font-size: 25px; height: 114rpx;">{{name}}</text>   
+</view>
+
+<view>
+<image src="cloud://cloud1-0g5xmjwvd771e9d9.636c-cloud1-0g5xmjwvd771e9d9-1310069791/提示.png" style="width: 40rpx; height: 40rpx; display: inline-block; box-sizing: border-box; left: 395rpx; top: -190rpx; position: relative"></image>
+<text style="position: relative; color: #a9a9a9; font-size: 16px; width: auto; left: 395rpx; top: -198rpx">数据为公司最新披露</text>
+<text style="position: relative; color: #a9a9a9; font-size: 16px; width: auto; left: 10rpx; top: -154rpx">点击下方按钮查看详细信息</text>
+</view>
+
+<view style="position: relative;  top: -108rpx">
+<button bindtap='click1' class="{{index=='1'?'nobtn2':'btn2'}}" data-index="1" style="position: relative; top: 5%;">
+ <text class="wenzi" >环境排放</text>
+</button>
+
+<view class="background" style="position: relative; left: 10%; top: 5%;">
+<view hidden="{{!is1}}" wx:for="{{datalist}}" wx:key="index">
+    <text class="wenzi1" data-testId="003">{{item.project}}</text>
+    <text class="wenzi1">{{item.num}}{{item.unit}}</text>
+</view>
+</view>
+
+<button bindtap='click2' class="{{index=='2'?'nobtn2':'btn2'}}" data-index="2" style="position: relative; top: 5%;">
+ <text class="wenzi" data-testId="003" style="width: 178rpx; height: 108rpx; display: flex; box-sizing: border-box">资源消耗</text>
+</button>
+
+<view class="background" style="position: relative; left: 10%; top: 5%;">
+<view hidden="{{!is2}}" wx:for="{{datalist}}" wx:key="index">
+    <view style="height: 8rpx;"></view>
+    <text class="wenzi1" data-testId="003">{{item.project}}\n{{item.num}}{{item.unit}}</text>
+    <view style="height: 8rpx;"></view>
+</view>
+</view>
+
+<button bindtap='click3' class="{{index=='3'?'nobtn2':'btn2'}}" data-index="3" style="position: relative; top: 5%;">
+ <text class="wenzi" data-testId="003" style="width: 178rpx; height: 108rpx; display: flex; box-sizing: border-box">环境绩效</text>
+</button>
+
+<view class="background" style="position: relative; left: 10%; top: 5%;">
+<view hidden="{{!is3}}" wx:for="{{datalist}}" wx:key="index">
+    <view style="height: 8rpx;"></view>
+    <text class="wenzi1" data-testId="003">{{item.project}}\n{{item.num}}{{item.unit}}</text>
+    <view style="height: 8rpx;"></view>
+</view>
+</view>
+
+<button bindtap='click4' class="{{index=='4'?'nobtn2':'btn2'}}" data-index="4" style="position: relative; top: 5%;">
+ <text class="wenzi" data-testId="003" style="width: 178rpx; height: 108rpx; display: flex; box-sizing: border-box">环保投资</text>
+</button>
+
+<view class="background" style="position: relative; left: 10%; top: 5%;">
+<view hidden="{{!is4}}" wx:for="{{datalist}}" wx:key="index">
+    <text class="wenzi1" data-testId="003">{{item.num}}{{item.unit}}</text>
+</view>
+</view>
+
+<button bindtap='click5' class="{{index=='5'?'nobtn2':'btn2'}}" data-index="5" style="position: relative; top: 5%">
+ <text class="wenzi" data-testId="003" style="width: 178rpx; height: 108rpx; display: flex; box-sizing: border-box">是否披露环境报告</text>
+</button>
+
+<view class="background" style="position:relative;  left: 10%; top: 5%;">
+<view hidden="{{!is5}}" wx:for="{{datalist}}" wx:key="index">
+    <text class="wenzi1" >{{item.bt1}}</text>
+    <text class="wenzi1" >{{item.nianbao}}</text>
+    <text class="wenzi1" >{{item.bt2}}</text>
+    <text class="wenzi1" >{{item.shehuizeren}}</text>
+    <text class="wenzi1" >{{item.bt3}}</text>
+    <text class="wenzi1" >{{item.dandupilu}}</text>
+</view>
+</view>
+</view>

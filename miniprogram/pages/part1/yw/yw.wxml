@@ -1,0 +1,16 @@
+<text class="title">ESG要闻</text>
+<view style="position: relative; top: 35rpx;">
+<view wx:for="{{list}}" wx:key="index">
+    <navigator class="news" url="../zc/web/web?link={{item.link}}" style="position: relative; left: 36rpx; top: -16rpx">
+         <view class="word" style="position: relative; ">{{item.title}}</view>
+         <view class="abstract" style="position: relative; ;">
+            <text style="position: relative; ">{{item.abstract}}\n</text>
+            <text style="position: absolute; right: 0%;">[详情]</text>
+         </view>
+    </navigator>
+    <view class="line" style="position: relative; left: 38rpx; top: 29rpx"></view>
+    <view class="blank"></view>
+</view>
+<view class="next" style="position: relative; left: 106rpx; top: 27rpx" bindtap="find_prior_data" >上一页</view>
+<view class="next" style="position: relative; left: 418rpx; top: -29rpx" bindtap="find_next_data" >下一页</view>
+</view>

@@ -1,0 +1,20 @@
+<!--pages/part2/company/caiwu/shichang/shichang.wxml-->
+
+<view class="table" style="position: relative; width: 686rpx; height: 628rpx; display: block; box-sizing: border-box; left: 30rpx; top: 50rpx">
+ <view class="tr bg-w">
+ <view class="th" wx:for="{{datalist1}}" wx:if="{{index==0}}">{{item.name}}</view>
+ <view class="th ">EPS</view>
+ <view class="th ">BPS</view>
+ <view class="th ">PE</view>
+ <view class="th">PS</view>
+ </view>
+ <block wx:for="{{datalist1}}" wx:key="index">
+ <view class="tr bg-g" wx:if="{{index >= 0}}" style="border: 3rpx solid #6bceb1; width: 686rpx; height: 96rpx; display: flex; box-sizing: border-box">
+ <view class="td" >{{item.time}}</view>
+ <view class="td" >{{item.EPS}}</view>
+ <view class="td">{{item.BPS}}</view>
+ <view class="td">{{item.shiyinglv}}</view>
+ <view class="td">{{item.shixiaolv}}</view>
+ </view>
+ </block>
+</view>

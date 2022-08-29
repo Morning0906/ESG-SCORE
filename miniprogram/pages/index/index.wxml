@@ -1,0 +1,5 @@
+<view>
+<text class='play' bindtap='gotoPage_part1' style="display: flex; position: absolute; left: 10%; justify-content: center; align-items: center; margin: 0 auto; top: 10%; width: 80%; height: 266.8rpx;  box-sizing: border-box">ESG宏观概览</text>
+<text class='play' bindtap='gotoPage_part2' style="position: absolute; left: 10%; top: 40%; justify-content: center; align-items: center; width: 80%; height: 266.8rpx; display: flex; box-sizing: border-box">ESG公司信息</text>
+<text class='play' bindtap='gotoPage_part3' style="position: absolute; left: 10%; top: 70%; justify-content: center; align-items: center; width: 80%; height: 266.8rpx; display: flex; box-sizing: border-box">ESG投资建议</text>
+</view>
